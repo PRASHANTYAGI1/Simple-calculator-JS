@@ -1,0 +1,129 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+.input{
+    margin: 10px 5px;
+    width: 95%;
+    padding: 10%;
+    background-color: rgba(225,225, 225, 0.3);
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    text-align: right;
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    text-shadow: 0px 1px 5px rgba(0,0, 0, 0.3);
+
+}
+.input::placeholder{
+     color: rgba(0,0,0,0,7);
+}
+button{
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    font: 500;
+    cursor:pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius:25px ;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px -14px 14px #FFF;
+}
+button:hover{
+    color: #ffff;
+    background-color: #f67c14;
+}
+.ac ,.del{
+    font-size:5px;
+
+}
+.equal{
+   background-color:#f67c14;
+}
+.operator{
+    color: #f67c14;
+    font-size: 30px;
+}
+/* Styles for devices with a screen width between 600px and 1200px and a portrait orientation */
+@media only screen and (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    .input {
+        font-size: 25px;
+        padding: 8%;
+    }
+
+    button {
+        width: 50px;
+        height: 45px;
+        padding: 8px;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .ac, .del {
+        font-size: 4px;
+    }
+
+    .operator {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .input {
+        font-size: 20px;
+        padding: 6%;
+    }
+
+    button {
+        width: 45px;
+        height: 40px;
+        padding: 7px;
+        margin: 7px;
+        font-size: 12px;
+    }
+
+    .ac, .del {
+        font-size: 3px;
+    }
+
+    .operator {
+        font-size: 20px;
+    }
+}
+  
